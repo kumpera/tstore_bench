@@ -1,5 +1,5 @@
 #Change this to your torch install path
-TORCH_HOME=/data/home/fduwjj/cluster/work/pytorch
+TORCH_HOME=/scratch/kumpera/pytorch
 
 store_barrier: store_barrier.cpp
 	clang++ -lm -lpthread -ltorch -ltorch_cpu -L${TORCH_HOME}/torch/lib -I${TORCH_HOME}/torch/include store_barrier.cpp -o store_barrier
